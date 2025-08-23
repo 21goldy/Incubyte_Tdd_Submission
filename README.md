@@ -85,3 +85,10 @@ We will build the `add(numbers)` function incrementally. For each step, start by
 - **Test**: `add("1,2,3,4") → 10`
 - **Implementation**: Extend the logic to handle multiple numbers.
 ![case 4 output](docs/case_4.png)
+
+#### Case 5: Custom Delimiters
+- **Test**: `add("//;\n1;2") → 3`
+- **Test**: `add('"//;\n"') → 0`
+- **Implementation**: Parse custom delimiters and handle them in the addition logic.
+![case 5 output](docs/case_5.png)
+

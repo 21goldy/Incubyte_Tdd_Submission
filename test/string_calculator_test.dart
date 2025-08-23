@@ -27,5 +27,10 @@ void main() {
       expect(calculator.add('5,5,5,5,5'), 25);
     });
 
+    test('supports custom delimiter', (){
+      expect(calculator.add('//;\n1;2;3'), 6);
+      expect(calculator.add('//;\n'), 0);
+    });
+
   });
 }
