@@ -17,5 +17,15 @@ void main() {
       expect(calculator.add('10'), 10);
     });
 
+    test('returns sum for two numbers', (){
+      expect(calculator.add('1,2'), 3);
+      expect(calculator.add('10,20'), 30);
+    });
+
+    test('returns sum for multiple numbers', (){
+      expect(calculator.add('1,2,3,4'), 10);
+      expect(calculator.add('5,5,5,5,5'), 25);
+    });
+
   });
 }

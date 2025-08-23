@@ -75,3 +75,13 @@ We will build the `add(numbers)` function incrementally. For each step, start by
 - **Test**: `add("5") → 5`
 - **Implementation**: Parse the string and return the integer value.
 ![case 2 output](docs/case_2.png)
+
+#### Case 3: Two Numbers
+- **Test**: `add("1,2") → 3`
+- **Implementation**: Split the string by commas, convert to integers, and return the sum.
+![case 3 output](docs/case_3.png)
+
+#### Case 4: Multiple Numbers
+- **Test**: `add("1,2,3,4") → 10`
+- **Implementation**: Extend the logic to handle multiple numbers.
+![case 4 output](docs/case_4.png)

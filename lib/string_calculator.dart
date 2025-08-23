@@ -11,6 +11,6 @@ class StringCalculator {
     if (parts.length == 1) {
       return int.parse(parts[0]);
     }
-    return 0;
+    return parts.map(int.parse).reduce((a, b) => a + b);
   }
 }
