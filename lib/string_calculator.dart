@@ -16,9 +16,21 @@ class StringCalculator {
     final normalizedBody = body.replaceAll('\n', delimiter);
     final parts = normalizedBody.split(delimiter);
 
-    return parts
+    final nums = parts
         .where((p) => p.isNotEmpty)
         .map(int.parse)
-        .fold(0, (a,b)=> a + b);
+        .toList();
+
+    final negatives = parts
+        .where((p) => p.isNotEmpty)
+        .map(int.parse)
+        .where((n) => n < 0)
+        .toList();
+
+    if (negatives.isNotEmpty) {
+      throw Exception('negative numbers not allowed: ${negatives.join(', ')}');
+    }
+
+    return nums.fold(0, (a, b) => a + b);
   }
 }

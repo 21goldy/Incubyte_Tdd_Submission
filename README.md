@@ -92,3 +92,7 @@ We will build the `add(numbers)` function incrementally. For each step, start by
 - **Implementation**: Parse custom delimiters and handle them in the addition logic.
 ![case 5 output](docs/case_5.png)
 
+#### Case 6: Negative Numbers
+- **Test**: `add("1,-2,3")` should throw an exception
+- **Implementation**: Check for negative numbers and throw an exception if found.
+![case 6 output](docs/case_6.png)

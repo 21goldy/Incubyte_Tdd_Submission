@@ -26,10 +26,14 @@ void main() {
       expect(calculator.add('1,2,3,4'), 10);
       expect(calculator.add('5,5,5,5,5'), 25);
     });
-
     test('supports custom delimiter', (){
       expect(calculator.add('//;\n1;2;3'), 6);
       expect(calculator.add('//;\n'), 0);
+    });
+
+    test('throws exception for negative numbers', (){
+      expect(() => calculator.add('1,-2,3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: Negatives not allowed: -2')));
+      expect(() => calculator.add('-1,-2,-3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: Negatives not allowed: -1, -2, -3')));
     });
 
   });
