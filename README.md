@@ -2,15 +2,26 @@
 
 A new Flutter project.
 
-## Getting Started
+## Procedures Done as followes 
 
-This project is a starting point for a Flutter application.
+1. Creating a flutter project 
+```
+flutter create incubyte_tdd
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. Initilizing a git repository 
+```
+git init . 
+git switch -C main  
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Making a base commit as first commit 
+```
+git add . 
+git commit -m "Initial Commit"
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Adding flutter_test package under dev dependencies 
+```
+flutter pub add dev:test
+```
