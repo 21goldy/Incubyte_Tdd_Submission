@@ -96,3 +96,6 @@ We will build the `add(numbers)` function incrementally. For each step, start by
 - **Test**: `add("1,-2,3")` should throw an exception
 - **Implementation**: Check for negative numbers and throw an exception if found.
 ![case 6 output](docs/case_6.png)
+
+### Conclusion
+By following the TDD approach, we ensure that our `StringCalculator` is built incrementally with a focus on correctness and maintainability. Each step involves writing tests first, then implementing the necessary functionality to pass those tests

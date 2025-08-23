@@ -7,7 +7,7 @@ void main() {
   group('StringCalculator', (){
     final calculator = StringCalculator();
 
-  
+
     test('returns 0 for empty string', (){
       expect(calculator.add(''), 0);
     });
@@ -32,8 +32,8 @@ void main() {
     });
 
     test('throws exception for negative numbers', (){
-      expect(() => calculator.add('1,-2,3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: Negatives not allowed: -2')));
-      expect(() => calculator.add('-1,-2,-3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: Negatives not allowed: -1, -2, -3')));
+      expect(() => calculator.add('1,-2,3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: negative numbers not allowed: -2')));
+      expect(() => calculator.add('-1,-2,-3'), throwsA(predicate((e) => e is Exception && e.toString() == 'Exception: negative numbers not allowed: -1, -2, -3')));
     });
 
   });
