@@ -69,5 +69,9 @@ We will build the `add(numbers)` function incrementally. For each step, start by
 - **Test**: `add("") → 0`
 - **Implementation**: Return 0 for an empty string.
 
+![case 1 output](docs/case_1.png)
 
-![case 1 output](docs/case_0.png)
+#### Case 2: Single Number
+- **Test**: `add("5") → 5`
+- **Implementation**: Parse the string and return the integer value.
+![case 2 output](docs/case_2.png)

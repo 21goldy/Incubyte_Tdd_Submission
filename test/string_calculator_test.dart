@@ -12,6 +12,10 @@ void main() {
       expect(calculator.add(''), 0);
     });
 
+    test('returns number for single number string', (){
+      expect(calculator.add('5'), 5);
+      expect(calculator.add('10'), 10);
+    });
 
   });
 }
